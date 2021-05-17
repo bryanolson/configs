@@ -32,7 +32,24 @@
                             "type":"basic",
                             "from": {"key_code":"home" } ,
                             "to": [ {"key_code":"delete_forward" } ]
-                        }
+                        },
+                        {
+                            "from": {
+                              "key_code": "t",
+                              "modifiers": {
+                                "mandatory": [
+                                  "left_option",
+                                  "left_control"
+                                ]
+                              }
+                            },
+                            "to": [
+                              {
+                                "shell_command": "open -aterminal"
+                              }
+                            ],
+                            "type": "basic"
+                          }
                     ]
 
                     }
